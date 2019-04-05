@@ -9,5 +9,12 @@ function nowServing(deliLine) {
 }
 
 function currentLine(cur) {
-  return cur.join(", ");
+  let str = "The line is currently: "
+  if(cur.length > 0) {
+    for(let i = 0; i < cur.length; i++) {
+      str += i < cur.length - 1 ? `${i + 1}. ${cur[i]}, ` : `${i + 1}. ${cur[i]}`;
+    }
+    return str;
+  }
+  return 
 }
