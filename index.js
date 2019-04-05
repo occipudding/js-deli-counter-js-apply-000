@@ -16,5 +16,5 @@ function currentLine(cur) {
     }
     return str;
   }
-  return 
+  return "The line is currently empty.";
 }
