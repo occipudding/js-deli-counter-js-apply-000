@@ -1,5 +1,5 @@
 function takeANumber(cur, name) {
-  cur.forEach(x => cur.push(x));
+  Array.isArray(name) ? name.forEach(x => cur.push(x)) : cur.push(name);
   return `Welcome, ${name}. You are number ${cur.length + 1} in line.`;
 }
 
