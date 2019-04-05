@@ -1,4 +1,7 @@
+const katzDeliLine = [];
+
 function takeANumber(cur, name) {
+  cur.push(name);
   return `Welcome, ${name}. You are number ${cur.length + 1} in line.`;
 }
 
