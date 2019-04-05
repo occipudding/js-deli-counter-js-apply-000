@@ -1,6 +1,6 @@
 function takeANumber(cur, name) {
   Array.isArray(name) ? name.forEach(x => cur.push(x)) : cur.push(name);
-  return `Welcome, ${name}. You are number ${cur.length + 1} in line.`;
+  return `Welcome, ${name}. You are number ${cur.length} in line.`;
 }
 
 function nowServing(cur) {
